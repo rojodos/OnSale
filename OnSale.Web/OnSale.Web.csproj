@@ -2,7 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>1ec2e8a1-2485-4978-90b4-1158da977f15</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201013234827_inicialDb.cs" />
+    <Compile Remove="Migrations\20201013234827_inicialDb.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
@@ -23,6 +29,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnSale.Common\OnSale.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+    <Folder Include="wwwroot\images\categories\" />
   </ItemGroup>
 
 </Project>
